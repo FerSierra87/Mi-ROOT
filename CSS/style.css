@@ -8,7 +8,7 @@ body{
 	overflow-x: hidden;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to bottom,#c9e9fc, #204e48);
+    
 }
 
 html{
@@ -149,6 +149,7 @@ background-color: rgb(218, 188, 194);
 transition: .4s;
 background: aliceblue;
 
+
 }
 /*header span{
     display: none;
@@ -175,9 +176,14 @@ background: aliceblue;
      padding: 50px ;
 }
 
+.carousel-item{
+    height: 40rem;
+    background: #0d2033;
+    background-position: center;
+    background-size: cover;
+}
 
-
-.trabajosImg{ 
+/*.trabajosImg{ 
     margin: 10px 0 10px 10px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -191,7 +197,9 @@ background: aliceblue;
     }
     .trabajosImg img{
         margin: 0 auto;
-    }
+    }*/
+   
+    
 
 
 .trabajo__agenda{
@@ -214,11 +222,9 @@ background: aliceblue;
     font-size: 16px;
     font-weight: bold;
     padding: 0 10px;
-    background-color: rgba(250, 192, 202, 0.5);
+    /*background-color: rgba(250, 192, 202, 0.5);*/
     border-radius: 50px;
     margin-bottom: 10px;
-
-
 }
 .derecha a:hover{
     color: crimson;
@@ -228,8 +234,9 @@ background: aliceblue;
     font-size: 16px;
     font-weight: bold;
     padding: 0 10px;
-    background-color: rgba(250, 192, 202, 0.5);
-    border-radius: 35px;
+    /*background-color: rgba(250, 192, 202, 0.5);*/
+    border-radius: 50px;
+    
 } 
 .izquierda a:hover{
     color: crimson;
@@ -297,7 +304,48 @@ background: aliceblue;
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
+.social-icons {
+    display: flex;
+    justify-content: end;
+}
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 2px solid var(--primary);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(--primary);
+}
 
+.social-icons a:hover {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primarys);
+}
+
+.footer-top {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #0a141d;
+}
+
+.footer-top a {
+    color: crimson;
+}
+
+.footer-top a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    background-color: #0a1a2a;
+}
 /* responsive */
 
 @media (max-width: 320px){
@@ -380,7 +428,7 @@ background: aliceblue;
         height: 30vh;
         
     }
-    .trabajosImg{
+    /*.trabajosImg{
         width: 60%;
         grid-template-columns: repeat(2, 2fr);
         align-items: center;
@@ -394,7 +442,7 @@ background: aliceblue;
         margin-bottom:15px;
         margin-left: 10px;
         margin-right:10px;
-    }
+    }*/
     
     .pie-pagina{
         width: 100vw;
