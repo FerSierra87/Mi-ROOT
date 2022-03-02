@@ -41,11 +41,11 @@ header{
     background-color: rgba(250, 192, 202, 0.5);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
-input{
+/*input{
     margin-top: 10px;
     margin-left: 15px;
     margin-bottom: 10px;
-}
+}*/
 textarea{
     margin-top: 10px;
     margin-left: 15px;
