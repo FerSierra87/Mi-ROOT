@@ -1,0 +1,73 @@
+header{
+    
+        background-color: rgba(250, 192, 202, 0.5);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+}
+.lista__menu { 
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    
+    nav{
+        max-width: 1200px;
+
+        ul{
+
+            list-style-type: none;
+
+            li{
+                display: inline-block;
+                margin: 0 10px;
+
+                a{
+
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding: 10px 10px;
+                    display: block;
+                    transition:color 0.4s ease;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+
+                    &:hover{
+                        color: crimson;
+                        background-color: rgb(218, 188, 194);
+
+                        &.active{
+                            transition: 4s;
+                            background: aliceblue;
+
+                            
+                        }
+
+                    }
+                }
+            }
+        }
+   
+    }
+
+    .checkbtn{
+        font-size: 30px;
+        color: #fff;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+
+        #check{
+            display: none;
+
+        }
+    
+
+}
+
+

@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "*Repositorio de cursada diseño web, CODERHOUSE*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerSierra87/Mi-ROOT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FerSierra87/Mi-ROOT/issues"
+  },
+  "homepage": "https://github.com/FerSierra87/Mi-ROOT#readme"
+}

@@ -183,23 +183,7 @@ background: aliceblue;
     background-size: cover;
 }
 
-/*.trabajosImg{ 
-    margin: 10px 0 10px 10px;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 2fr);
-    align-items: center;
-    gap: 40px;
-    margin: 0 auto;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    
-    }
-    .trabajosImg img{
-        margin: 0 auto;
-    }*/
-   
-    
+
 
 
 .trabajo__agenda{
@@ -406,6 +390,7 @@ background: aliceblue;
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 99;
     }
     .lista__menu nav ul li{
         display: block;
