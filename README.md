@@ -7,4 +7,9 @@
 - Carpeta CSS
 - Carpeta IMG
 - Carpeta PAGE
+- Carpeta scss
 - Archivo index
+- git ignore
+- package.json
+
+
