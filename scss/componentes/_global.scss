@@ -6,7 +6,7 @@
 
 body{
 	overflow-x: hidden;
-    font-size: 20px;
+    font-size: $fontz;
     font-family: 'Roboto', sans-serif;
 
     
@@ -15,3 +15,23 @@ body{
 html{
 	font-size: 62.5%;
 }
+
+
+.estilo{
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1 {
+    @extend .estilo
+}
+
+$mapRedes:(facebook:blue, instagram: violet,youtube:red);
+
+@each $red in $mapRedes {
+    .#{$red} {
+        color: $color;
+    }
+
+}
+    
