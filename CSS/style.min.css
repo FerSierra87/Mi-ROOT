@@ -15,9 +15,72 @@ html {
   font-size: 62.5%;
 }
 
-.estilo, h1 {
-  font-size: 21px;
-  font-family: 'Times New Roman', Times, serif;
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+  color: crimson;
+  margin: 10px;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  color: darksalmon;
+  margin: 10px 0 0 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+h3 {
+  text-align: justify;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+header {
+  background-color: rgba(250, 192, 202, 0.5);
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.pink-textarea textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #f48fb1;
+  -webkit-box-shadow: 0 1px 0 0 #f48fb1;
+          box-shadow: 0 1px 0 0 #f48fb1;
+}
+
+.active-pink-textarea.md-form label.active {
+  color: #f48fb1;
+}
+
+.active-pink-textarea.md-form textarea.md-textarea:focus:not([readonly]) + label {
+  color: #f48fb1;
+}
+
+article {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+p {
+  text-align: justify;
+  line-height: 3.5rem;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.estilo {
+  font-size: 30px;
+  text-align: center;
+  color: crimson;
 }
 
 header {
@@ -312,4 +375,3 @@ nav li a:hover, li a.active {
             justify-content: center;
   }
 }
-
