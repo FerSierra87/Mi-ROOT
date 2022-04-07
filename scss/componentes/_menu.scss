@@ -55,7 +55,7 @@ header{
     
 
 
-          @media (max-width: 320px) {
+          @media (min-width: 320px) {
             body {
               font-size: 120%;
               width: 100vw;
@@ -74,7 +74,7 @@ header{
             }
           }
 
-@media (max-width: 998px) {
+@media (max-width: 1088px) {
     body {
       font-size: 150%;
       width: 100vw;

@@ -1,4 +1,4 @@
-.pie-pagina {
+/*.pie-pagina {
     width: 100%;
     background-color: #0a141d;
   
@@ -108,8 +108,11 @@
     background-color: #0a1a2a;
   }
 
-
-  @media (max-width: 320px) {
+*/.pie_pagina {
+  position: fixed;
+  bottom: 0;
+  }
+  @media (min-width: 320px) {
     .pie-pagina .grupo-1 {
       width: 60%;
       grid-template-columns: repeat(1, 1fr);
@@ -125,7 +128,7 @@
   }
 
 
-  @media (max-width: 998px) {
+  @media (max-width: 1080px) {
     .pie-pagina {
       width: 100vw;
       height: 60vh;
@@ -151,4 +154,8 @@
       display: flex;
       justify-content: center;
     }
+  }*/
+  .pie_pagina {
+  position: fixed;
+  bottom: 0;
   }
