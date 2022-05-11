@@ -11,5 +11,6 @@
 - Archivo index
 - git ignore
 - package.json
+- main.js
 
 
