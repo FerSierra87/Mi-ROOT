@@ -32,3 +32,36 @@ while(dato!= "esc"){
     alert(" Usted a ingresado " + dato);
     dato=prompt(" Ingresar otro dato? de lo contrario digite esc");
 }
+
+
+ //Desafio interactuando con HTML - DOM
+ 
+
+ const titulo = document.getElementsByClassName ("encabezado");
+ console.log(titulo);
+
+ console.log(titulo[0].innerText)
+ console.log(titulo[0].innerHTML)
+
+ titulo[0].innerText = "Cambio el titulo"
+
+ titulo[0].className = " otraClase"
+
+ const enlace = document.createElement('a')
+ enlace.textContent = "Nuevo"
+ enlace.href = "../index.html"
+ enlace.classList.add('enlace')
+
+ titulo[0].appendChild(enlace)
+
+
+ 
+
+
+
+
+
+
+
+
+
