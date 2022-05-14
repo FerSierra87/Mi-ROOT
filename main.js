@@ -12,6 +12,7 @@ return nombre +" "+ apellido;
 }
 
 //ARRAY
+/*
 const servicio = ["","Manos", "Pies","Rostro"];
 let serv= servicio.length;
 
@@ -32,7 +33,7 @@ while(dato!= "esc"){
     alert(" Usted a ingresado " + dato);
     dato=prompt(" Ingresar otro dato? de lo contrario digite esc");
 }
-
+*/
 
  //Desafio interactuando con HTML - DOM
  
@@ -52,7 +53,40 @@ while(dato!= "esc"){
  enlace.href = "../index.html"
  enlace.classList.add('enlace')
 
- titulo[0].appendChild(enlace)
+ 
+
+ //Evento- entregable
+
+ const formulario = document.getElementById('form')
+
+ formulario.addEventListener('submit', function(e){
+
+    e.preventDefault()
+     let mail = document.getElementById('email-form').value
+     console.log(mail)
+ })
+
+ 
+
+ 
+let contrasena = document.getElementById('pass')
+let boton = document.getElementById('boton')
+
+
+boton.addEventListener('click', mostrarContraseña)
+
+function mostrarContraseña(){
+    if(
+        contrasena.type == "password"){
+            contrasena.type = "text"
+            boton.src = "../img/ocultar.png"
+        } else {
+            contrasena.type = "password"
+            boton.src = "../img/mostrar.png"
+
+        }
+
+}
 
 
  

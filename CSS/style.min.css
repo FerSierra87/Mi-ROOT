@@ -357,3 +357,7 @@ nav li a:hover, li a.active {
   position: fixed;
   bottom: 0;
 }
+#boton{
+  cursor: pointer;
+  width: 30px;
+}
