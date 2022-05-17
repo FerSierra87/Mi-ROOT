@@ -57,11 +57,18 @@ rel="stylesheet">
                 </div>
                 <h2 class="fw-bold text-center py-5"></h2>
 
-                <form action="#" id="form">
+                <form onsubmit = "ingresado()" >
+
+                  <div class="mb-4">
+                    <label for="username" class= "form-label"> Nombre de Usuario</label>
+                    <input type="text"  class="form-control" id="username" name="username">
+                </div>  
+
                 <div class="mb-4">
                     <label for="email" class= "form-label"> Correo Electronico</label>
                     <input type="email" id="email-form" class="form-control" name="email">
                 </div>
+
                 <div class="mb-4" form-check>
                     <label for="password" class= "form-label"> Contraseña</label>
                     <input type="password" id="pass" class="form-control" name="password" >
@@ -75,8 +82,8 @@ rel="stylesheet">
                     <button type="submit" class="btn btn-primary btn-lg"> Iniciar Sesión </button>
                 </div>
                 <div class="my-3">
-                    <span>No tienes cuenta? <a href="#">Registrate</a></span> <br>
-                    <span> <a href="#">Recuperar Contraseña</a></span>
+                    <span>No tienes cuenta? <a href="./login.html">Registrate</a></span> <br>
+                    <span> <a href="./contacto.html">Recuperar Contraseña</a></span>
                 </div>
             </form>
             <!-- login con redes-->

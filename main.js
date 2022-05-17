@@ -1,39 +1,4 @@
-// entregable
 
-
-let nombre = prompt(" Ingresa tu nombre")
-let apellido = prompt(" Ingresa apellido")
-
-
-function suTurno(nombre, apellido){
-
-return nombre +" "+ apellido; 
-    
-}
-
-//ARRAY
-/*
-const servicio = ["","Manos", "Pies","Rostro"];
-let serv= servicio.length;
-
-
-for( let i=1; i<serv; i+=1){
-    Text += "<li>" + servicio[i] + "</li>";
-     //const servicio=prompt("Ingresa el servicio");
-    if(servicio=="esc"){
-        break;
-        
-    }
-     alert(" Su turno es "+ i + " Nombre: " + suTurno(nombre, apellido) + " para el servicio: " + servicio[i]);
-} 
-
-
-let dato= prompt(" Desea agregar algo más?");
-while(dato!= "esc"){
-    alert(" Usted a ingresado " + dato);
-    dato=prompt(" Ingresar otro dato? de lo contrario digite esc");
-}
-*/
 
  //Desafio interactuando con HTML - DOM
  
@@ -41,12 +6,10 @@ while(dato!= "esc"){
  const titulo = document.getElementsByClassName ("encabezado");
  console.log(titulo);
 
- console.log(titulo[0].innerText)
- console.log(titulo[0].innerHTML)
 
- titulo[0].innerText = "Cambio el titulo"
+ 
 
- titulo[0].className = " otraClase"
+
 
  const enlace = document.createElement('a')
  enlace.textContent = "Nuevo"
@@ -57,7 +20,7 @@ while(dato!= "esc"){
 
  //Evento- entregable
 
- const formulario = document.getElementById('form')
+ /*const formulario = document.getElementById('form')
 
  formulario.addEventListener('submit', function(e){
 
@@ -68,7 +31,7 @@ while(dato!= "esc"){
 
  
 
- 
+ */
 let contrasena = document.getElementById('pass')
 let boton = document.getElementById('boton')
 
@@ -89,9 +52,48 @@ function mostrarContraseña(){
 }
 
 
+function ingresado(){
+
+
+    let usuario = document.getElementById ('username').value;
+    let correo = document.getElementById ('email-form').value;
+    let contrasena = document.getElementById('pass').value;
+    let user = {
+        usuario: username,
+        correo: mail-form,
+        contrasena: pass,
+    }
+
+    let json = JSON.stringify(user)
+    localStorage.setItem(username, json)
+    console.log('usuario agregado')
+}
+
  
 
+function loginFunc(e){
 
+
+
+    let usuario = document.getElementById ('username').value;
+    let correo = document.getElementById ('email-form').value;
+    let contrasena = document.getElementById('pass').value;
+    let resultado = document.getElementById('result')
+
+    let user = localStorage.getItem(user)
+    let data = JSON.parse(user)
+    console.log(data)
+
+    if (user==null){
+        result.innerHTML = "Usuario incorrecto"
+    } else if(user==data.username && pass == data.password){
+        result.innerHTML = "Logeado"
+    }else{
+        result.innerHTML = "Contraseña incorrecta"
+    }
+
+    
+}
 
 
 
