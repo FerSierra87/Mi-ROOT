@@ -20,18 +20,18 @@
 
  //Evento- entregable
 
- /*const formulario = document.getElementById('form')
+ const formulario = document.getElementById('logeado')
 
  formulario.addEventListener('submit', function(e){
 
     e.preventDefault()
-     let mail = document.getElementById('email-form').value
-     console.log(mail)
+     let nombre = document.getElementById('username').value
+     console.log(nombre)
  })
 
  
 
- */
+ 
 let contrasena = document.getElementById('pass')
 let boton = document.getElementById('boton')
 
@@ -60,7 +60,7 @@ function ingresado(){
     let contrasena = document.getElementById('pass').value;
     let user = {
         usuario: username,
-        correo: mail-form,
+        correo: email-form,
         contrasena: pass,
     }
 
@@ -71,11 +71,18 @@ function ingresado(){
 
  
 
-function loginFunc(e){
+function loginFunc(){
 
+    const form = document.getElementById('logearse')
 
+    form.addEventListener('submit', function(a){
+   
+       a.preventDefault()
+        let nombre = document.getElementById('name').value
+        console.log(nombre)
+    })
 
-    let usuario = document.getElementById ('username').value;
+    let usuario = document.getElementById ('name').value;
     let correo = document.getElementById ('email-form').value;
     let contrasena = document.getElementById('pass').value;
     let resultado = document.getElementById('result')
