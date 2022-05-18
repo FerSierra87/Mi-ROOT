@@ -56,16 +56,17 @@ function ingresado(){
 
 
     let usuario = document.getElementById ('username').value;
-    let correo = document.getElementById ('email-form').value;
+    let correo = document.getElementById ('correo').value;
     let contrasena = document.getElementById('pass').value;
     let user = {
         usuario: username,
-        correo: email-form,
+        correo: correo,
         contrasena: pass,
     }
-
+    
+   
     let json = JSON.stringify(user)
-    localStorage.setItem(username, json)
+    localStorage.setItem(user, json)
     console.log('usuario agregado')
 }
 
@@ -83,13 +84,19 @@ function loginFunc(){
     })
 
     let usuario = document.getElementById ('name').value;
-    let correo = document.getElementById ('email-form').value;
+    let correo = document.getElementById ('correo').value;
     let contrasena = document.getElementById('pass').value;
     let resultado = document.getElementById('result')
 
-    let user = localStorage.getItem(user)
+   /* let user = localStorage.getItem(user)
     let data = JSON.parse(user)
-    console.log(data)
+   // console.log(data)
+
+*/
+
+
+
+    
 
     if (user==null){
         result.innerHTML = "Usuario incorrecto"
@@ -102,9 +109,36 @@ function loginFunc(){
     
 }
 
+// Desafio operadores avanzados
+
+let user = {
+
+    nombre: "Fernando",
+    apellido: " Sierra"
+}
+
+let {nombre, apellido}=user
+
+console.log(nombre)
+console.log(apellido)
+
+let user2 = {
+    ...user
+}
+console.log(user2)
 
 
+let user3 = {
+    ...user,
+    correo:"algo@algo",
+    edad: 35
+}
 
+console.log(user3)
 
+let user4 = null
 
+    console.log(user3 || "Este usuario no existe")
+
+    console.log(user3?.nombre?.JuanPedro || "Este nombre no existe")
 
