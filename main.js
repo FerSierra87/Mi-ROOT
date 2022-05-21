@@ -27,6 +27,14 @@
     e.preventDefault()
      let nombre = document.getElementById('username').value
      console.log(nombre)
+
+     Swal.fire({
+        icon: 'success',
+        title: 'Tu mensaje fue enviado',
+        text: 'Pronto recibiras información',
+        timer: 2000
+        
+      })
  })
 
  
@@ -48,7 +56,7 @@ function mostrarContraseña(){
             boton.src = "../img/mostrar.png"
 
         }
-
+j
 }
 
 
@@ -68,6 +76,9 @@ function ingresado(){
     let json = JSON.stringify(user)
     localStorage.setItem(user, json)
     console.log('usuario agregado')
+
+
+    
 }
 
  
@@ -142,3 +153,18 @@ let user4 = null
 
     console.log(user3?.nombre?.JuanPedro || "Este nombre no existe")
 
+
+    //LIBRERIAS sweet alert 
+const enviar = document.querySelector('#enviar')
+
+enviar.addEventListener('submit', ()=>{
+
+    Swal.fire({
+        icon: 'success',
+        title: 'Tu mensaje fue enviado',
+        text: 'Pronto recibiras información',
+        timer: 2000
+        
+      })
+
+})
